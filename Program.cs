@@ -48,7 +48,7 @@ namespace IpfilterUpdater
 			startInfo.UseShellExecute = false;
 			startInfo.FileName = bandizipDir + "Bandizip.exe";
 			startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-			startInfo.Arguments = "x ipfilter.zip -r";
+			startInfo.Arguments = "x ipfilter.zip";
 			using (Process exeProcess = Process.Start(startInfo))
 			{
 				exeProcess.WaitForExit();
